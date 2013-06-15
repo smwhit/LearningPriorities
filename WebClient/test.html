@@ -17,14 +17,10 @@
 
 <script src="/Content/js/bootstrap.js"></script>
 <script>
-	$.fn.editable.defaults.mode = 'inline';
-	$().editable({
-		ajaxOptions: {
-    	dataType: 'jsonp',
-    	type: 'POST',
-		}
-	  });
-	$('#Label').editable();
+	$.post('http://localhost:8080/priorities?callback=?', "{'Label': 'omg', 'id': 123}", function(data) {
+	  
+	}, "application/json");
+
 </script>
 	</body>
 </html>
