@@ -20,5 +20,10 @@ namespace LearningPriorities
 		public string Notes { get; set; }
 
 		public LearningItem[] Dependents { get; set; }
+
+		public override string ToString ()
+		{
+			return string.Format ("[LearningItem: Id={0}, Label={1}, Priority={2}, DateAdded={3}, DateStarted={4}, DateCompleted={5}, Notes={6}, Dependents={7}]", Id, Label, Priority, DateAdded, DateStarted, DateCompleted, Notes, Dependents);
+		}
 	}
 }

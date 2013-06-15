@@ -4,6 +4,7 @@ using ServiceStack.WebHost.Endpoints;
 using ServiceStack.Text;
 using ServiceStack.Redis;
 using Funq;
+using ServiceStack.Common.Web;
 
 
 namespace PriorityService
@@ -62,19 +63,25 @@ namespace PriorityService
 			return Redis.As<LearningItem>().GetAll();
 		}
 
-		public LearningItem Post(LearningItem item)
+		public object Post(LearningItem item)
 		{
+			Console.WriteLine (item.ToJson());
+			Console.WriteLine (item.ToString());
 			var redis = Redis.As<LearningItem>();
-
+		
 			//Get next id for new todo
 			if (item.Id == default(long)) 
 				item.Id = redis.GetNextSequence();
 
 			redis.Store(item);
-
-			return item;
+		
+			return new HttpResult(item) {
+				Headers = {
+					{ "Access-Control-Allow-Origin", "*" },
+					{ "Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS" },
+					{ "Access-Control-Allow-Headers", "Content-Type" }, }
+			};
 		}
-
 	}
 }
 

@@ -33,8 +33,10 @@ Global
 		{BDE04BD3-40A0-4B8E-A0B9-7729FFB7D1C2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItems = $0
-		$0.Item = PriorityService\PriorityService.csproj
-		$0.Item = WebClient\WebClient.csproj
+		StartupItem = WebClient\WebClient.csproj
+		Policies = $0
+		$0.DotNetNamingPolicy = $1
+		$1.DirectoryNamespaceAssociation = None
+		$1.ResourceNamePolicy = FileFormatDefault
 	EndGlobalSection
 EndGlobal
