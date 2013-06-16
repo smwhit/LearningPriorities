@@ -7,14 +7,11 @@ namespace LearningPriorities
 	{
 		public IEnumerable<LearningItem> GetAll ()
 		{
-			return null;
-//			return new List<LearningItem> {
-//				new LearningItem { Label = "Decide on storage for ToDo App", 
-//									Notes = "Redis or RavenDb?", 
-//									Dependents = new [] {
-//						new LearningItem { Label = "Something else"}
-//					}	
-//				}};
+			//return null;
+            return new List<LearningItem> {
+				new LearningItem { Label = "Decide on storage for ToDo App", 
+								
+				}};
 		}
 
 		public void Create (LearningItem item)

@@ -1,0 +1,5 @@
+C:\Users\Simon\source\LearningPriorities\WebClient\bin\WebClient.dll
+C:\Users\Simon\source\LearningPriorities\WebClient\bin\WebClient.pdb
+C:\Users\Simon\source\LearningPriorities\WebClient\obj\Debug\WebClient.dll
+C:\Users\Simon\source\LearningPriorities\WebClient\obj\Debug\WebClient.pdb
+C:\Users\Simon\source\LearningPriorities\WebClient\obj\Debug\WebClient.csprojResolveAssemblyReference.cache

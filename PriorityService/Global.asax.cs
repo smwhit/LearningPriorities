@@ -1,5 +1,6 @@
 using ServiceStack.ServiceInterface;
 using LearningPriorities;
+using ServiceStack.ServiceInterface.Cors;
 using ServiceStack.WebHost.Endpoints;
 using ServiceStack.Text;
 using ServiceStack.Redis;
@@ -40,7 +41,7 @@ namespace PriorityService
 
 			//Register Redis factory in Funq IoC. The default port for Redis is 6379.
 			container.Register<IRedisClientsManager>(new BasicRedisClientManager("localhost:6379"));
-
+            Plugins.Add(new CorsFeature());
 			//Register user-defined REST Paths
 			Routes
 				.Add<LearningItem>("/priorities")
@@ -50,7 +51,7 @@ namespace PriorityService
 
 	public class RedisPriorityService : Service
 	{
-		ILearningItemRepository repo = new FakeLearningItemRepository();
+		ILearningItemRepository repo = new FakeLearningItemRepository();        
 
 		public object Get(LearningItem todo)
 		{
@@ -67,20 +68,23 @@ namespace PriorityService
 		{
 			Console.WriteLine (item.ToJson());
 			Console.WriteLine (item.ToString());
-			var redis = Redis.As<LearningItem>();
-		
-			//Get next id for new todo
-			if (item.Id == default(long)) 
-				item.Id = redis.GetNextSequence();
 
-			redis.Store(item);
-		
-			return new HttpResult(item) {
-				Headers = {
-					{ "Access-Control-Allow-Origin", "*" },
-					{ "Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS" },
-					{ "Access-Control-Allow-Headers", "Content-Type" }, }
-			};
+		    //return null;
+            var redis = Redis.As<LearningItem>();
+
+            //Get next id for new todo
+            if (item.Id == default(long))
+                item.Id = redis.GetNextSequence();
+
+            redis.Store(item);
+
+            return new HttpResult(item)
+            {
+                Headers = {
+		            { "Access-Control-Allow-Origin", "*" },
+		            { "Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS" },
+		            { "Access-Control-Allow-Headers", "Content-Type" }, }
+            };
 		}
 	}
 }

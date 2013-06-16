@@ -1,0 +1,17 @@
+C:\Users\Simon\source\LearningPriorities\PriorityService\bin\PriorityService.dll
+C:\Users\Simon\source\LearningPriorities\PriorityService\bin\PriorityService.pdb
+C:\Users\Simon\source\LearningPriorities\PriorityService\bin\LearningPriorities.dll
+C:\Users\Simon\source\LearningPriorities\PriorityService\bin\ServiceStack.Common.dll
+C:\Users\Simon\source\LearningPriorities\PriorityService\bin\ServiceStack.dll
+C:\Users\Simon\source\LearningPriorities\PriorityService\bin\ServiceStack.Interfaces.dll
+C:\Users\Simon\source\LearningPriorities\PriorityService\bin\ServiceStack.OrmLite.dll
+C:\Users\Simon\source\LearningPriorities\PriorityService\bin\ServiceStack.OrmLite.SqlServer.dll
+C:\Users\Simon\source\LearningPriorities\PriorityService\bin\ServiceStack.Redis.dll
+C:\Users\Simon\source\LearningPriorities\PriorityService\bin\ServiceStack.ServiceInterface.dll
+C:\Users\Simon\source\LearningPriorities\PriorityService\bin\ServiceStack.Text.dll
+C:\Users\Simon\source\LearningPriorities\PriorityService\obj\Debug\PriorityService.csprojResolveAssemblyReference.cache
+C:\Users\Simon\source\LearningPriorities\PriorityService\obj\Debug\PriorityService.dll
+C:\Users\Simon\source\LearningPriorities\PriorityService\obj\Debug\PriorityService.pdb
+C:\Users\Simon\source\LearningPriorities\PriorityService\bin\nunit.framework.dll
+C:\Users\Simon\source\LearningPriorities\PriorityService\bin\LearningPriorities.pdb
+C:\Users\Simon\source\LearningPriorities\PriorityService\bin\nunit.framework.xml

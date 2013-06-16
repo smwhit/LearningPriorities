@@ -1,0 +1,7 @@
+C:\Users\Simon\source\LearningPriorities\LearningPriorities\bin\Debug\LearningPriorities.dll
+C:\Users\Simon\source\LearningPriorities\LearningPriorities\bin\Debug\LearningPriorities.pdb
+C:\Users\Simon\source\LearningPriorities\LearningPriorities\bin\Debug\nunit.framework.dll
+C:\Users\Simon\source\LearningPriorities\LearningPriorities\bin\Debug\nunit.framework.xml
+C:\Users\Simon\source\LearningPriorities\LearningPriorities\obj\Debug\LearningPriorities.csprojResolveAssemblyReference.cache
+C:\Users\Simon\source\LearningPriorities\LearningPriorities\obj\Debug\LearningPriorities.dll
+C:\Users\Simon\source\LearningPriorities\LearningPriorities\obj\Debug\LearningPriorities.pdb

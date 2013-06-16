@@ -17,9 +17,9 @@
 
 <script src="/Content/js/bootstrap.js"></script>
 <script>
-	$.post('http://localhost:8080/priorities?callback=?', "{'Label': 'omg', 'id': 123}", function(data) {
-	  
-	}, "application/json");
+    $.post('http://localhost:56440/priorities?callback=?', JSON.stringify("{'Label': 'omg', 'id': 123}"), function (data) {
+        console.log('123');
+    });
 
 </script>
 	</body>

@@ -1,0 +1,69 @@
+
+<html>
+	<head>
+		<title></title>
+		<link href="//cdnjs.cloudflare.com/ajax/libs/x-editable/1.4.4/bootstrap-editable/css/bootstrap-editable.css" rel="stylesheet">
+		<link href="/Content/css/bootstrap.css" rel="stylesheet">
+		<script src="/Scripts/jquery-2.0.js"></script>
+        <link href="/Content/css/app.css" rel="stylesheet" media="screen">
+	</head>
+    <body>
+        <div class="navbar navbar-inverse navbar-fixed-top">
+	      <div class="navbar-inner">
+	        <div class="container">
+	          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	          </button>
+	          <a class="brand" href="#">My Priorities</a>
+	          <div class="nav-collapse collapse">
+	            <ul class="nav">
+	              <li class="active"><a href="#">Home</a></li>
+	            </ul>
+	          </div><!--/.nav-collapse -->
+	        </div>
+	      </div>
+	    </div>
+        <div class="container">
+            <div>
+                <a href="#" id="Label" 
+                   data-type="text" 
+                   data-pk="1" 
+                   data-url="/priorities" 
+                   data-original-title="Enter label">zaaah</a>
+            </div>
+        </div>        
+        
+        <script src="/Content/js/bootstrap.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/x-editable/1.4.4/bootstrap-editable/js/bootstrap-editable.min.js"></script>
+        <script src="/Content/js/testapp.js"></script>
+        <!-- <script>
+//	        $.ajax({
+//	            url: '/priorities',
+//	            type: 'POST',
+//	            data: JSON.stringify({'Label': 'omg', 'id': 123}),
+//	            contentType: 'application/json; charset=utf-8',
+//	            dataType: 'json',
+//	            async: false,
+//	            success: function (msg) {
+//	                alert(msg);
+//	            }
+//	        });
+            $.fn.editable.defaults.mode = 'inline';
+            $().editable({
+                ajaxOptions: {
+                    contentType: 'application/json; charset=utf-8'
+                }
+            });
+            $('#Label').editable({
+                type : 'text',
+                url: '/priorities',
+                params: function (params) {
+                    return JSON.stringify(params);
+                }
+            });
+
+        </script>-->
+    </body>
+</html>
